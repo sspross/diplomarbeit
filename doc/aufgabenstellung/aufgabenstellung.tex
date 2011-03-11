@@ -1,0 +1,156 @@
+%
+%  Antrag, Aufgabenstellung Diplomarbet
+%
+%  Created by Silvan Spross on 2011-02-03.
+%
+\documentclass[]{scrreprt}
+\usepackage[ngerman]{babel}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+\ifpdf
+    \usepackage[pdftex]{graphicx}
+\else
+    \usepackage{graphicx}
+\fi
+
+\title{Aufgabenstellung\\
+    Diplomarbeit in Informatik}
+    
+\author{Studierender - Silvan Spross\\
+    Projektbetreuer - Beat Seeliger\\
+    Auftraggeber - Michael Walder, allink.creative\\
+    \\
+    HSZ-T - Technische Hochschule Zürich}
+    
+\date{26. Februar 2011}
+
+\begin{document}
+
+    \ifpdf
+        \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+    \else
+        \DeclareGraphicsExtensions{.eps, .jpg}
+    \fi
+
+    \maketitle
+
+    \pagenumbering{arabic}
+
+    % \tableofcontents
+
+    \chapter{Aufgabenstellung Diplomarbeit}
+
+    \section{Thema}
+    Definition und Optimierung der Projektprozesse bei allink.creative
+
+    \section{Ausgangslage}
+    Die Agentur allink.creative ist im letzten Jahr stark gewachsen. Von zehn
+    Mitarbeitern im Februar 2010 auf siebzehn Mitarbeiter im Februar 2011. Dies hat 
+    zur Auswirkung, dass gewisse Funktionen und Prozesse neu definiert und bestehende
+    überarbeitet werden müssen, um weiterhin effizient, oder wenn möglich noch 
+    effizienter, arbeiten zu können. Die Agentur arbeitet überwiegend mit Apple
+    Computern und setzt gewisse Software ein, die die Geschäftsleitung beibehalten 
+    möchte. Die konkreten Vorstellungen und Vorgaben müssen von dem Studierenden
+    in der Arbeit erfasst werden.
+
+    \section{Ziel der Arbeit}
+    Bereiche wie die Stundenrapportierung, die Projektplanung und das Projektcontrolling 
+    können mit Hilfe von IT-Lösungen massgebend optimiert und vereinfacht werden. 
+    In dieser Arbeit sollen die Herausforderungen, die der Auftraggeber in der 
+    Planung und im Controlling eines Projektes zu bewältigen hat, erfasst und 
+    Lösungsvorschläge evaluiert werden. Der Fokus liegt dabei auf der besseren 
+    Messbarkeit des finanziellen Erfolges eines Projektes und des gesamten 
+    Unternehmens.
+    
+    Die Arbeit grenzt sich ganz klar von der Finanzbuchhaltung ab, da
+    diese keinen direkten Einfluss auf die Projekte hat und bei allink.creative 
+    bei einen Treuhänder ausgelagert wurde.
+    
+    % Folgende Ziele sollen erreicht werden:
+    % 
+    % \begin{itemize}
+    %     \item Bla
+    % \end{itemize}
+    % 
+    % Folgende Punkte werden abgegrenzt, da es den Rahmen der Arbeit sprengen 
+    % würde:
+    % 
+    % \begin{itemize}
+    %     \item Bla
+    % \end{itemize}
+
+    \section{Aufgabenstellung}
+    Folgende Aufgaben soll der Studierende während dieser Arbeit bewältigen:
+    
+    \begin{itemize}
+        \item IST-Situation im Bereich Projektablauf der allink.creative erfassen
+        \item Kennzahlen definieren, die in Zukunft auf Projektebene gemessen 
+            werden sollen
+        \item Neue Prozesse definieren und bestehende, sofern sinnvoll, überarbeiten
+        \item Evaluation von IT-Lösungen, die diese Prozesse möglichst passend 
+            für den Auftraggeber abbilden und die definierten Kennzahlen generieren können
+    \end{itemize}
+
+    \section{Erwartete Resultate}
+    Der Studierende soll dem Auftraggeber ein Dokument erstellen, das folgende 
+    Punkte beinhaltet: 
+    
+    \begin{itemize}
+        \item Beschreibung der IST-Situation im Bereich Projektablauf
+        \item Übersicht der bestehenden Software beim Auftraggeber
+        \item Kennzahlen, die auf Projektebene gemessen werden sollen
+        \item Darstellung der neuen und überarbeiteten Prozesse
+        \item Übersicht der bestehenden Software in der neuen Prozesslandschaft
+        \item Softwareempfehlungen für die komplette Prozessabbildung
+        \item ``Make or Buy''-Entscheid mit dem Auftraggeber
+    \end{itemize}
+    
+    Sofern noch zum Zeitpunkt dieser Arbeit möglich, soll der neue 
+    Projektablauf anhand eines realen Projektes aufgezeigt werden.
+
+    \section{Geplante Termine}
+    Die Termine können zum Zeitpunkt des Antrages noch nicht definitiv 
+    festgelegt werden. Sofern jedoch die Planung eingehalten werden kann und 
+    freie Termine zur Verfügung stehen, sollten die Termine innerhalb der 
+    angegebenen Monate liegen.
+
+    \begin{tabbing}
+        \hspace*{4cm}\= \kill
+    	Kick-Off:               \> Anfangs März 2011\\
+    	Review:                 \> Anfangs April 2011\\
+    	Abgabe:                 \> Anfangs Juni 2011\\
+    	Schlusspräsentation:    \> Mitte Juni 2011 \\
+    \end{tabbing}
+
+    \section{Genehmigung}
+    Der Studierende, sein Projektbetreuer und der Studiengangsleiter 
+    Informatik erklären sich mit der Aufgabenstellung einverstanden und geben 
+    die Arbeit frei zur Erfassung im Einschreibesystem der Hochschule für 
+    Technik Zürich.
+
+    \begin{tabbing}
+        \hspace*{10cm}\= \kill
+    	Silvan Spross, Studierender \> Beat Seeliger, Projektbetreuer \\\\\\
+        \line(1,0){150} \> \line(1,0){150} \\\\\\
+    	Dr. Olaf Stern, Studiengangsleiter Informatik \\\\\\
+        \line(1,0){150}
+    \end{tabbing}
+    
+    \bibliographystyle{plain}
+    \bibliography{literaturverzeichnis}
+    
+\end{document}
