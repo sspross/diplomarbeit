@@ -5,7 +5,6 @@
 *.log
 *.maf
 *.mtc*
-*.pdf
 *.synctex.gz
 *.lof
 *.lot
