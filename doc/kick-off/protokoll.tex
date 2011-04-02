@@ -1,0 +1,104 @@
+%
+%  Kickoff Protokoll
+%
+%  Created by Silvan Spross on 2010-10-21.
+%
+\documentclass[]{scrreprt}
+\usepackage[ngerman]{babel}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Running Headers and footers
+%\usepackage{fancyhdr}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+\ifpdf
+    \usepackage[pdftex]{graphicx}
+\else
+    \usepackage{graphicx}
+\fi
+
+\title{Kick-off Protokoll}
+    
+\author{Studierender - Silvan Spross\\
+    Projektbetreuer - Beat Seeliger\\
+    Auftraggeber - Michael Walder, allink.creative\\
+    \\
+    HSZ-T - Technische Hochschule Zürich}
+    
+\date{11. März 2011}
+
+\begin{document}
+
+    \ifpdf
+        \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+    \else
+        \DeclareGraphicsExtensions{.eps, .jpg}
+    \fi
+
+    \maketitle
+
+    \pagenumbering{arabic}
+
+    % \tableofcontents
+
+    \chapter{Kick-off Protokoll}
+
+    \section{Diplomarbeit}
+    Definition und Optimierung der Projektprozesse bei allink.creative
+
+    \section{Beschlüsse anhand Ziele Kick-Off Meeting}
+    Alle Fragen aus dem Kick-Off Meeting konnten geklärt werden:
+    \begin{enumerate}
+        \item Steht der Auftraggeber hinter dieser Arbeit? \\
+            {\bf Ja} und der Auftraggeber wir den Studierenden so gut wie
+            möglich unterstützen.
+        \item Sind die fachliche Kompetenz und die Verfügbarkeit des Betreuers 
+            sichergestellt? \\
+            {\bf Ja}, da der Betreuer ebenfalls selbständig und Partner in 
+            einem KMU ist.
+        \item Sind die Urheberrechte und Publikationsrechte geklärt? \\
+            {\bf Ja}, die Arbeit kann vollständig öffentlich zugänglich gemacht
+            werden.
+        \item Bekommt der Studierende die notwendige logistische und beratende 
+            Unterstützung des Auftraggebers? \\
+            {\bf Ja}
+        \item Entspricht die Arbeit den Anforderungen für eine Diplomarbeit? \\
+            {\bf Ja}, jedoch muss die Aufgabenstellung noch um den Punkt 
+            ``Recherche'' und ein zusätzliches Resultat ``Proof of Concept'' 
+            ergänzt werden.
+        \item Ist die Arbeit klar abgegrenzt und terminlich entkoppelt von den 
+            Prozessen des Auftraggebers? \\
+            {\bf Ja}
+        \item Ist eine Grobplanung vorhanden? \\
+            {\bf Ja}, auch wenn sich diese möglicherweise noch verändern wird.
+        \item Ist die Arbeit technisch und terminlich umsetzbar? \\
+            {\bf Ja}, jedoch ist der Zeitplan ziemlich eng.
+        \item Sind die nächsten Schritte klar formuliert? \\
+            {\bf Ja}
+    \end{enumerate}
+    
+\end{document}
