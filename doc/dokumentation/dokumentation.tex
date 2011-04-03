@@ -156,7 +156,7 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   \maketitle
   \cleardoublepage
 
-  \input{./kapitel/abstract.tex}
+  \input{./kapitel/00_abstract.tex}
   \cleardoublepage
 
   \pagenumbering{roman}
@@ -167,28 +167,74 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   \pagenumbering{arabic}
   
   \chapter{Rahmenbedingungen}
-  \input{./kapitel/rahmenbedingungen.tex}
+  \input{./kapitel/01_rahmenbedingungen.tex}
   \cleardoublepage
   
   \chapter{Einführung}
-  \input{./kapitel/einfuehrung.tex}  
+  \input{./kapitel/02_einfuehrung.tex}  
   \cleardoublepage
   
   \chapter{Aufgabenstellung}
-  \input{./kapitel/aufgabenstellung.tex}
+  \input{./kapitel/03_aufgabenstellung.tex}
   \cleardoublepage
   
-  %\chapter{Erreichte Ziele}
-  %\input{./kapitel/erreichte_ziele.tex}
-  %\cleardoublepage
+  \chapter{Erreichte Ziele}
+  \input{./kapitel/04_erreichte_ziele.tex}
+  \cleardoublepage
+  
+  \chapter{Planung}
+  \section{Detailanalyse der Aufgabenstellung}
+  \section{Aufwandschätzung}
+  \section{Projektplan}
+  \section{Termine}
+  
+  \chapter{Studie}
+  \section{Heutige Prozesslandschaft}
+  \section{Aktueller Projektablauf}
+  \section{Verwendete Software}
+  \section{Andere Unternehmungen}
+  \subsection{Unternehmen XY}
+  \subsubsection{Projektablauf}
+  \subsubsection{Software}
+  
+  \chapter{Analyse}
+  \section{Grundlagen eines Projektablaufes}
+  \subsection{Vorgehen}
+  \subsection{Darstellung}
+  \section{Mögliche Kennzahlen}
+  \subsection{Vorgehen}
+  \subsection{Berechnung}
+  \subsection{Abhängigkeiten}
+  
+  \chapter{Resultat}
+  \section{Neue Prozesslandschaft}
+  \subsection{Projektablauf}
+  \subsection{Kennzahlen}
+  \subsection{Software}
+  \subsubsection{Bestehende Software}
+  \subsubsection{Softwareempfehlung}
+  \section{Entscheidung}
+  \subsection{Prozesslandschaft}
+  \subsection{Software}
+  
+  \chapter{Proof of Concept}
+  \section{Alter Projektablauf}
+  \section{Neuer Projektablauf}
+  \section{Gegenüberstellung}
+  \subsection{Vorteile}
+  \subsection{Nachteile}
+  
+  \chapter{Reflektion}
+  \section{Fazit}
+  \section{Ausblick}
   
   \appendix
   
   \chapter{Personalienblatt}
-  \input{./kapitel/personalienblatt.tex}
+  \input{./kapitel/90_personalienblatt.tex}
   
   \chapter{Bestätigung}
-  \input{./kapitel/bestaetigung.tex}
+  \input{./kapitel/91_bestaetigung.tex}
   
   \listoffigures
   \listoftables
@@ -196,5 +242,10 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   
   \bibliographystyle{alpha}
   \bibliography{literaturverzeichnis}
+  
+  \chapter{Protokolle}
+  \section{Kick-Off Protokoll}
+  \section{Design Review Protokoll}
+  \section{Arbeitsprotokoll}
 
 \end{document}
