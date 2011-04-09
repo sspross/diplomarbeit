@@ -66,6 +66,7 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
 
 % If you want to generate a toc for each chapter (use with book)
 \usepackage{minitoc}
+\usepackage{longtable}
 
 % Abkürzungsverzeichnis erstellen.
 \usepackage[printonlyused]{acronym}
@@ -166,47 +167,54 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   
   \pagenumbering{arabic}
   
-  \chapter{Rahmenbedingungen}
-  \input{./kapitel/01_rahmenbedingungen.tex}
-  \cleardoublepage
-  
   \chapter{Einführung}
   \input{./kapitel/02_einfuehrung.tex}  
+  \cleardoublepage
+  
+  \chapter{Rahmenbedingungen}
+  \input{./kapitel/01_rahmenbedingungen.tex}
   \cleardoublepage
   
   \chapter{Aufgabenstellung}
   \input{./kapitel/03_aufgabenstellung.tex}
   \cleardoublepage
   
-  \chapter{Erreichte Ziele}
-  \input{./kapitel/04_erreichte_ziele.tex}
+  \chapter{Projektadministration}
+  \input{./kapitel/05_projektplanung.tex}
   \cleardoublepage
   
-  \chapter{Planung}
-  \section{Detailanalyse der Aufgabenstellung}
-  \section{Aufwandschätzung}
-  \section{Projektplan}
-  \section{Termine}
+  \chapter{Ist-Analyse allink.creative}
+  \input{./kapitel/06_ist_analyse.tex}
+  \cleardoublepage
   
-  \chapter{Studie}
-  \section{Heutige Prozesslandschaft}
-  \section{Aktueller Projektablauf}
-  \section{Verwendete Software}
-  \section{Andere Unternehmungen}
-  \subsection{Unternehmen XY}
-  \subsubsection{Projektablauf}
+  \chapter{Projektablauf-Studie}
+  \section{Voraussetzungen}
+  \subsection{Kriterien}
+  \subsubsection{Allgemein}
   \subsubsection{Software}
-  
-  \chapter{Analyse}
+  \subsubsection{Kennzahlen}
+  \subsection{Bewertung}
+  \section{Anforderungen}
   \section{Grundlagen eines Projektablaufes}
+  \subsection{Techniken}
   \subsection{Vorgehen}
   \subsection{Darstellung}
   \section{Mögliche Kennzahlen}
   \subsection{Vorgehen}
   \subsection{Berechnung}
   \subsection{Abhängigkeiten}
+  \section{Konklusion}
   
-  \chapter{Resultat}
+  \chapter{Marktanalyse}
+  \section{Verfügbare Software}
+  \subsection{Bewertung}
+  \section{Andere Unternehmungen}
+  \subsection{Unternehmen XY}
+  \subsubsection{Projektablauf}
+  \subsubsection{Software}
+  \subsubsection{Bewertung}
+  
+  \chapter{Resultate}
   \section{Neue Prozesslandschaft}
   \subsection{Projektablauf}
   \subsection{Kennzahlen}
