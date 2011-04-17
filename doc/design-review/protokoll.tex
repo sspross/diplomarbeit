@@ -1,0 +1,83 @@
+%
+%  Kickoff Protokoll
+%
+%  Created by Silvan Spross on 2010-10-21.
+%
+\documentclass[]{scrreprt}
+\usepackage[ngerman]{babel}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Running Headers and footers
+%\usepackage{fancyhdr}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+\usepackage{url}
+
+\ifpdf
+    \usepackage[pdftex]{graphicx}
+\else
+    \usepackage{graphicx}
+\fi
+
+\title{Design-Review Protokoll}
+    
+\author{Studierender - Silvan Spross\\
+    Projektbetreuer - Beat Seeliger\\
+    Auftraggeber - Michael Walder, allink.creative\\
+    \\
+    HSZ-T - Technische Hochschule Zürich}
+    
+\date{13. April 2011}
+
+\begin{document}
+
+    \ifpdf
+        \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+    \else
+        \DeclareGraphicsExtensions{.eps, .jpg}
+    \fi
+
+    \maketitle
+
+    \pagenumbering{arabic}
+
+    % \tableofcontents
+
+    \chapter{Design-Review Protokoll}
+
+    \section{Diplomarbeit}
+    Definition und Optimierung der Projektprozesse bei allink.creative
+
+    \section{Beschlüsse des Design Reviews}
+    \begin{enumerate}
+        \item Die Aufgabenstellung wurde angepasst und erneut im EBS zur Revision freigegeben.
+        \item Das weitere Vorgehen wurde festgehalten.
+        \item Alle Punkte gemäss dem Anhang\footnote{\url{https://github.com/sspross/diplomarbeit/blob/master/doc/reglemente/Ablauf-Bachelorarbeit_Studiengang-Informatik-der-HSZ-T_V1.3.pdf}} 
+            wurden erfüllt und geklärt.
+        
+    \end{enumerate}
+    
+\end{document}
