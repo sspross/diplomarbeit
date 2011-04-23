@@ -9,16 +9,16 @@
 \documentclass[
 11pt, % Schriftgrösse
 a4paper, % A4 Papier
-BCOR25mm, % Absoluter Wert der Bindekorrektur, z.B. BCOR1cm
+BCOR10mm, % Absoluter Wert der Bindekorrektur, z.B. BCOR1cm
 DIV14, % Satzspiegel festlegen siehe
        % http://www.ctex.org/documents/packages/nonstd/koma-script.pdf
 footsepline = false, % Trennlinie zwischen Textkörper und Fußzeile
                      % bei normalen Seiten
 headsepline, % Trennlinie zwischen Kopfzeile und Textkörper
              % bei normalen Seiten
-twoside, % Zweiseitig
+oneside, % Zweiseitig
 openright,
-%halfparskip, % Europäischer Satz mit Abstand zwischen den Absätzen
+halfparskip, % Europäischer Satz mit Abstand zwischen den Absätzen
 abstracton, % inkl. Abstract
 listof=totocnumbered, % Abb.- und Tab.verzeichnis im Inhaltsverzeichnis
 bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
@@ -45,15 +45,15 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
 \clearscrheadfoot
 \automark[chapter]{section}
 
-\lehead{\sffamily\upshape\headmark}
-\cehead{}
-\rehead{}
-\lefoot[\pagemark]{\upshape \pagemark}
-\cefoot{}
-\refoot{}
-\lohead{}
-\cohead{}
-\rohead{\sffamily\upshape\headmark}
+% \lehead{\sffamily\upshape\headmark}
+% \cehead{}
+% \rehead{}
+% \lefoot[\pagemark]{\upshape \pagemark}
+% \cefoot{}
+% \refoot{}
+% \lohead{}
+% \cohead{}
+\lohead{\sffamily\upshape\headmark}
 \lofoot{}
 \cofoot{}
 \rofoot[\pagemark]{\scshape \pagemark}
@@ -136,7 +136,7 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
 \author{Diplomarbeit in Informatik\\
     \\
     Studierender - Silvan Spross\\
-	Auftraggeber - Michael Walder, allink.creative\\
+	Auftraggeber - Michael Walder\\
     Projektbetreuer - Beat Seeliger\\
     Experte - tbd\\
 	\\
@@ -171,18 +171,6 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   \input{./kapitel/02_einfuehrung.tex}  
   \cleardoublepage
   
-  \chapter{Rahmenbedingungen}
-  \input{./kapitel/01_rahmenbedingungen.tex}
-  \cleardoublepage
-  
-  \chapter{Aufgabenstellung}
-  \input{./kapitel/03_aufgabenstellung.tex}
-  \cleardoublepage
-  
-  \chapter{Projektadministration}
-  \input{./kapitel/05_projektplanung.tex}
-  \cleardoublepage
-  
   \chapter{Analyse}
   \input{./kapitel/06_ist_analyse.tex}
   \cleardoublepage
@@ -209,6 +197,7 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   \chapter{Reflektion}
   \section{Fazit}
   \section{Ausblick}
+  \section{Danksagung}
   
   \appendix
   
@@ -224,6 +213,17 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   
   \bibliographystyle{alpha}
   \bibliography{literaturverzeichnis}
+  
+  \chapter{Rahmenbedingungen}
+  \input{./kapitel/01_rahmenbedingungen.tex}
+  \cleardoublepage
+  
+  \chapter{Aufgabenstellung}\label{chap:aufgabenstellung}
+  \input{./kapitel/03_aufgabenstellung.tex}
+  \cleardoublepage
+  
+  \input{./kapitel/05_projektplanung.tex}
+  \cleardoublepage
   
   \chapter{Protokolle}
   \section{Kick-Off Protokoll}
