@@ -84,6 +84,8 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
 % This is now the recommended way for checking for PDFLaTeX:
 \usepackage{ifpdf}
 
+\usepackage{eurosym}
+
 \usepackage[hyperfootnotes=false]{hyperref}
 \hypersetup{
   bookmarks=true,         % show bookmarks bar?
@@ -207,6 +209,19 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   \chapter{Bestätigung}
   \input{./kapitel/91_bestaetigung.tex}
   
+  \chapter{Rahmenbedingungen}
+  \input{./kapitel/01_rahmenbedingungen.tex}
+  
+  \chapter{Aufgabenstellung}\label{chap:aufgabenstellung}
+  \input{./kapitel/03_aufgabenstellung.tex}
+  
+  \input{./kapitel/05_projektplanung.tex}
+  
+  \chapter{Protokolle}
+  \section{Kick-Off Protokoll}
+  \section{Design Review Protokoll}
+  \section{Arbeitsprotokoll}
+  
   \listoffigures
   \listoftables
   %\lstlistoflistings
@@ -214,20 +229,6 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   \bibliographystyle{alpha}
   \bibliography{literaturverzeichnis}
   
-  \chapter{Rahmenbedingungen}
-  \input{./kapitel/01_rahmenbedingungen.tex}
-  \cleardoublepage
-  
-  \chapter{Aufgabenstellung}\label{chap:aufgabenstellung}
-  \input{./kapitel/03_aufgabenstellung.tex}
-  \cleardoublepage
-  
-  \input{./kapitel/05_projektplanung.tex}
-  \cleardoublepage
-  
-  \chapter{Protokolle}
-  \section{Kick-Off Protokoll}
-  \section{Design Review Protokoll}
-  \section{Arbeitsprotokoll}
+
 
 \end{document}
