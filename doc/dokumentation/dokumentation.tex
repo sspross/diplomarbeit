@@ -140,7 +140,7 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
     Studierender - Silvan Spross\\
 	Auftraggeber - Michael Walder\\
     Projektbetreuer - Beat Seeliger\\
-    Experte - tbd\\
+    Experte - Matthias Bachmann\\
 	\\
 	HSZ-T - Technische Hochschule Zürich}
 
@@ -153,21 +153,32 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   \else
     \DeclareGraphicsExtensions{.eps, .jpg}
   \fi
-  
+
   \pagenumbering{Alph}
   
   \maketitle
 
   \input{./kapitel/00_abstract.tex}
 
-  \pagenumbering{roman}
+  \pagenumbering{Roman}
   
   \tableofcontents
   
-  \pagenumbering{arabic}
+  \chapter{Personalienblatt}
+  \input{./kapitel/90_personalienblatt.tex}
   
-  \chapter{Einführung}
-  \input{./kapitel/01_einfuehrung.tex}  
+  \chapter{Bestätigung}
+  \input{./kapitel/91_bestaetigung.tex}
+  
+  \chapter{Vorwort}
+  \input{./kapitel/00_01_vorwort.tex}
+  
+  \chapter{Einleitung}
+  \pagenumbering{arabic}
+  \input{./kapitel/01_einleitung.tex}  
+  
+  \chapter{Theoretischer Teil}
+  \input{./kapitel/00_02_theoretischer_teil.tex}
   
   \chapter{Analyse}
   \input{./kapitel/02_analyse.tex}
@@ -197,12 +208,6 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   \section{Danksagung}
   
   \appendix
-  
-  \chapter{Personalienblatt}
-  \input{./kapitel/90_personalienblatt.tex}
-  
-  \chapter{Bestätigung}
-  \input{./kapitel/91_bestaetigung.tex}
   
   \chapter{Rahmenbedingungen}
   \input{./kapitel/92_rahmenbedingungen.tex}
