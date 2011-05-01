@@ -86,6 +86,8 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
 
 \usepackage{eurosym}
 
+\usepackage{natbib}
+
 \usepackage[hyperfootnotes=false]{hyperref}
 \hypersetup{
   bookmarks=true,         % show bookmarks bar?
@@ -102,7 +104,7 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   pdfnewwindow=true,      % links in new window
   colorlinks=true,       % false: boxed links; true: colored links
   linkcolor=blue,          % color of internal links
-  citecolor=green,        % color of links to bibliography
+  citecolor=black,        % color of links to bibliography
   filecolor=magenta,      % color of file links
   urlcolor=cyan          % color of external links
   % linkcolor=black,          % color of internal links
@@ -226,9 +228,7 @@ bibliography=totocnumbered % Lit.zeichnis in Inhaltsverzeichnis aufnehmen
   \listoftables
   %\lstlistoflistings
   
-  \bibliographystyle{alpha}
+  \bibliographystyle{unsrtnat}
   \bibliography{literaturverzeichnis}
-  
-
 
 \end{document}
