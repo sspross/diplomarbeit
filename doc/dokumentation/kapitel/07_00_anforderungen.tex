@@ -1,11 +1,11 @@
+\section{Bedürfnisse der Stakeholder}
+\newcounter{bcounter}
+
 Bei der Aufnahme der Bedürfnisse der verschiedenen Stakeholdern, zusammen mit 
 der Geschäftsleitung der allink, wird darauf geachtet, dass sie so einfach und 
 eindeutig wie möglich formuliert werden. Zusätzlich wird jedes Bedürfnis beschrieben
 und fortlaufend nummeriert, damit in den Anforderungen wieder darauf verwiesen
 werden kann.
-
-\section{Bedürfnisse der Stakeholder}
-\newcounter{bcounter}
 
 \subsection{Kunde}
 Die in der Tabelle \ref{tab:beduerfnisse_stakeholder_kunde} aufgelisteten 
@@ -138,34 +138,6 @@ formuliert.
 
 \clearpage
 
-\section{Anforderungen}
-\newcounter{acounter}
-Die aufgenommenen und beschriebenen Bedürfnisse werden nun in der Formulierung
-der Anforderungen berücksichtigt und in der Tabelle \ref{tab:anforderungen_projektmanagement} 
-dargestellt. Es liegt in der Natur der Sache, dass Bedürfnisse von mehreren 
-Anforderungen abgedeckt und nicht alle Bedürfnisse eins zu eins berücksichtigt 
-werden können. Sie werden jedoch bei der Ausarbeitung des Konzeptes im Kapitel \ref{chap:konzept}
-erneut beachtet und zum Ende kontrolliert, welche Bedürfnisse abgedeckt wurden.
-
-Jede Anforderung wird beschrieben und die darin abgedeckten Bedürfnisse aufgelistet. 
-Die Anforderungen werden zudem priorisiert, indem sie in Muss- und Kann-Anforderungen 
-kategorisiert werden.\footnote{\citealp*[Vgl.][S. 32]{hobel2006gabler}}
-
-\begin{center}
-    \begin{longtable}{lp{3cm}p{6cm}p{3cm}l}
-        \toprule \textbf{Nr.} & \textbf{Anforderung} & \textbf{Beschreibung} & \textbf{Bedürfnisse} & \textbf{Prio} \\
-        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & ... & ... & B1 bis B4 & Muss \\
-        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & ... & ... & B1 bis B4 & Muss \\
-        \bottomrule
-        \caption[Anforderungen an das neue Projektmanagement]{Anforderungen an das 
-            neue Projektmanagement\footnotemark}
-        \label{tab:anforderungen_projektmanagement}
-    \end{longtable}
-\end{center}
-\footnotetext{Eigene Darstellung}
-
-\clearpage
-
 \section{Kennzahlen}
 \newcounter{kcounter}
 
@@ -181,8 +153,8 @@ Projektebene gemessen werden können.
         \midrule \addtocounter{kcounter}{1}K\arabic{kcounter} & Projekt & Bruttokosten &
             Die Bruttokosten eines Projektes setzen sich aus allen dem Kunden 
             gegenüber offerierten Beträgen zusammen.\\
-        \midrule \addtocounter{kcounter}{1}K\arabic{kcounter} & Projekt & Nettobudget &
-            Das Nettobudget eines Projektes wird berechnet, indem man die Bruttokosten
+        \midrule \addtocounter{kcounter}{1}K\arabic{kcounter} & Projekt & Nettokosten &
+            Das Nettokosten eines Projektes wird berechnet, indem man die Bruttokosten
             abzüglich den externen Kosten von Drittanbietern rechnet.\\
         \midrule \addtocounter{kcounter}{1}K\arabic{kcounter} & Projekt & Zielstundensatz &
             Der Zielstundensatz ist der durchschnittlich zu erreichende Stundensatz,
@@ -205,9 +177,45 @@ Projektebene gemessen werden können.
 \end{center}
 \footnotetext{Eigene Darstellung}
 
+Ein Rechenbeispiel der in der Tabelle \ref{tab:proj_kennzahlen_anforderungen_projektmanagement}
+definierten Projekt-Kennzahlen ist in der nachfolgenden Tabelle \ref{tab:proj_kennzahlen_anforderungen_projektmanagement_bsp}
+abgebildet.
+
+\begin{center}
+    \begin{longtable}{lp{3cm}p{3cm}p{7cm}}
+        \toprule \textbf{Nr.} & \textbf{Kennzahl} & \textbf{Betrag} & \textbf{Beschreibung} \\
+        \midrule K1 & Bruttokosten & 20'000 CHF & 
+            Gegenüber dem Kunden offerierter Betrag. \\
+        \midrule K2 & Nettokosten & 16'400 CHF &
+            Bruttokosten abzüglich geplanter Kosten von Drittanbietern, zum
+            Beispiel einer Druckerei.\\
+        \midrule K3 & Zielstundensatz & 150 CHF & 
+            Am Ende des Projektes ist das Ziel dem Kunden 150 CHF pro rapportierte
+            Stunde verrechnet zu haben. \\
+        \midrule K4 & Stundenmaximum & 109 Stunden & 
+            Das bedeutet es stehen theoretisch 109 Stunden zur Verfügung. \\
+        \midrule K5 & Total Stunden & 135 Stunden & 
+            Rapportiert wurden schlussendlich insgesamt 135 Stunden. \\
+        \midrule K6 & Eigentlicher Stun- densatz & 121 CHF & 
+            Das bedeutet man hat am Ende die Stunden für 121 CHF pro Stunde
+            verrechnen können. \\
+        \bottomrule
+        \caption[Rechenbeispiel der Projekt-Kennzahlen]{Rechenbeispiel der 
+            Projekt-Kennzahlen\footnotemark}
+        \label{tab:proj_kennzahlen_anforderungen_projektmanagement_bsp}
+    \end{longtable}
+\end{center}
+\footnotetext{Eigene Darstellung}
+
+In diesem praxisnahen Beispiel sieht man, dass der Zielstundensatz nicht erreicht
+wurde. Dank diesen Kennzahlen kann man dies nun besser erkennen und nach den 
+dafür verantwortlichen Gründen suchen. Auch kann man bei einer laufenden 
+Betrachtung während eines Projektes besser abschätzen, ob man die Planung
+einhalten wird, oder nicht.
+
 \subsection{Liquiditätsplanung}
 Die in der Tabelle \ref{tab:liq_kennzahlen_anforderungen_projektmanagement} abgebildeten
-Liquidität-Kennzahlen basieren ebenfalls auf den Anforderungen und auf zusätzlichen
+Liquiditäts-Kennzahlen basieren ebenfalls auf den Anforderungen und auf zusätzlichen
 Diskussionen mit der Geschäftsleitung. Diese Kennzahlen sollen in Zukunft
 projektübergreifend gemessen und zur Liquiditätsplanung des Unternehmens
 verwendet werden können.
@@ -228,17 +236,108 @@ verwendet werden können.
             Die noch offenen Beträge pro Monat werden durch die Summe in diesem
             Monat geplanter, aber noch nicht in Rechnung gestellter Kosten berechnet.\\
         \midrule \addtocounter{kcounter}{1}K\arabic{kcounter} & Planung & Nächste 30 Tage &
-            asdf\\
+            Die noch offenen Beträge in den nächsten 30 Tagen werden durch die Summe,
+            der in den nächsten 30 Tagen geplanten und noch nicht in Rechnung
+            gestellten Kosten berechnet.\\
         \midrule \addtocounter{kcounter}{1}K\arabic{kcounter} & Planung & Weiter 30 Tage &
-            asdf\\
+            Die noch offenen Beträge weiter weg als 30 Tage werden durch die Summe,
+            der in den Tagen weiter weg als 30 Tagen geplanten und noch nicht in
+            Rechnung gestellten Kosten berechnet.\\
         \midrule \addtocounter{kcounter}{1}K\arabic{kcounter} & Planung & Auf sicher ungeplant &
-            asdf\\
+            Die auf sicher geplanten Beträge lassen sich durch die Summe aller
+            noch nicht geplanten und noch nicht in Rechnung gestellten Kosten
+            berechnen.\\
         \midrule \addtocounter{kcounter}{1}K\arabic{kcounter} & Planung & Offeriert &
-            asdf\\
+            Die offerierten Beträge werden durch die Summe aller offerierten 
+            Beträge über alle Projekte berechnet.\\
         \bottomrule
-        \caption[Liquidität-Kennzahlen-Anforderungen an das neue Projektmanagement]{Liquidität-Kennzahlen-Anforderungen 
+        \caption[Liquiditäts-Kennzahlen-Anforderungen an das neue Projektmanagement]{Liquiditäts-Kennzahlen-Anforderungen 
             an das neue Projektmanagement\footnotemark}
         \label{tab:liq_kennzahlen_anforderungen_projektmanagement}
     \end{longtable}
 \end{center}
 \footnotetext{Eigene Darstellung}
+
+Mit diesen Liquiditäts-Kennzahlen sollte es der Geschäftsführung möglich sein
+eine saubere und relativ genaue Liquiditätsplanung auf zwei Monate hinaus
+erstellen zu können. Voraussetzung für die Genauigkeit der Daten ist eine
+saubere Erfassung und Pflege in einem passendem System.
+
+\clearpage
+
+\section{Anforderungen}
+\newcounter{acounter}
+Die aufgenommenen und beschriebenen Bedürfnisse und Kennzahlen werden nun in der Formulierung
+der Anforderungen berücksichtigt und in der Tabelle \ref{tab:anforderungen_projektmanagement} 
+dargestellt. Es liegt in der Natur der Sache, dass Bedürfnisse von mehreren 
+Anforderungen abgedeckt und nicht alle Bedürfnisse eins zu eins berücksichtigt 
+werden können. Sie werden jedoch bei der Ausarbeitung des Konzeptes im Kapitel \ref{chap:konzept}
+erneut beachtet und zum Ende kontrolliert, welche Bedürfnisse abgedeckt wurden.
+
+Jede Anforderung wird beschrieben und die darin abgedeckten Bedürfnisse aufgelistet. 
+Die Anforderungen werden zudem priorisiert, indem sie in Muss- und Kann-Anforderungen 
+kategorisiert werden.\footnote{\citealp*[Vgl.][S. 32]{hobel2006gabler}}
+
+\begin{center}
+    \begin{longtable}{llp{6cm}p{1cm}p{1cm}l}
+        \toprule \textbf{Nr.} & \textbf{Anforderung} & \textbf{Beschreibung} & \textbf{Bed.} & \textbf{Ken.} & \textbf{Prio.} \\
+        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & Projektorganisation &
+            Für jedes Projekt muss ein Hauptverantwortlicher Projektleiter definiert
+            werden. Falls dies nicht ein Partner der Geschäftsleitung ist, muss
+            zusätzlich noch ein Verantwortlicher Partner definiert werden. & 
+            B2, B8, B9, B13, B16 & 
+            - & 
+            Muss \\
+        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & Projektbrief &
+            Zu jedem Projekt muss ein klar formulierter Projektbrief erstellt
+            werden, der die Ziele des Projektes klar aufzeigt. & 
+            B10 & 
+            - & 
+            Muss \\
+        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & Projektplanung &
+            Es muss eine zentrale Verwaltung der Projekte existieren, wo Meilensteine
+            und deren Arbeitspakete (Todos) verwaltet werden können. & 
+            B1, B10 & 
+            - & 
+            Muss \\
+        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & Zeiterfassung &
+            Es muss eine möglichst einfache Zeiterfassungs-Lösung
+            existieren, wo Mitarbeiter die aufgewendeten Stunden auf Stufe 
+            Projekt rapportieren können. & 
+            B6, B14 & 
+            K5 & 
+            Muss \\
+        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & Projektcontrolling &
+            Es muss eine zentrale Projektverwaltung existieren, wo die wichtigsten
+            Kennzahlen eines Projektes betrachtet werden können. & 
+            B6, B7 & 
+            K1 bis K6 & 
+            Muss \\
+        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & Kostenüberblick &
+            Es muss eine zentrale und Projektübergreifende Kostenverwaltung existieren, wo
+            Offerten, externe Kosten und Rechnungen geplant und gepflegt werden können. & 
+            B6, B7, B17 & 
+            K1 bis K14 & 
+            Muss \\
+        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & Projektablage &
+            Es muss eine klare und möglichst selbsterklärende Struktur für die
+            Ablage von laufenden und archivierten Projekten definiert werden. & 
+            B8, B12 & 
+            - & 
+            Muss \\
+        \midrule \addtocounter{acounter}{1}A\arabic{acounter} & Qualitätskontrolle &
+            Die Qualitätskontrolle muss im Projektablauf klar verankert sein und ein
+            Verantwortlicher muss pro Projekt definiert werden. 
+            & 
+            B3, B4 & 
+            - & 
+            Muss \\
+        \bottomrule
+        \caption[Anforderungen an das neue Projektmanagement]{Anforderungen an das 
+            neue Projektmanagement\footnotemark}
+        \label{tab:anforderungen_projektmanagement}
+    \end{longtable}
+\end{center}
+\footnotetext{Eigene Darstellung}
+
+B5, B11, B15 nicht zugeordnet. Keine Kann-Anforderungen. Alle Kennzahlen.
