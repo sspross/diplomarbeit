@@ -237,4 +237,107 @@ Somit ist sichergestellt, dass die Projektleiter und die Geschäftsführung eine
 relativ genaue Termin- und Kostenkontrolle durchführen können.
 
 \section{Projektabschluss}
-asdf
+Das Projekt wurde umgesetzt und die Todos der Realisierung sind abgearbeitet.
+Nun folgt die Qualitätskontrolle (\textbf{7.2}) wofür der Projektleiter
+verantwortlich ist und in diesem Fall auch gleich durchführt. Es wurden nur
+kleine inhaltliche Mängel gefunden, die der Projektleiter selbst beheben
+konnte (\textbf{7.3}). Es werden somit keine neuen Arbeitspakete definiert.
+
+Der Projektleiter fasst nun die Resultate in einem Produktabnahmebericht 
+zusammen (\textbf{9.1}). Da in diesem Projekt der Projektleiter auch gleich der 
+verantwortliche Partner ist, geschieht dies in Form eines E-Mails, das direkt an 
+die verantwortliche Person beim Kunden geschickt wird (\textbf{9.2}). Der Kunde 
+kann nun die Testversion des Wettbewerbs online anschauen und begutachten (\textbf{9.3}).
+Der Kunde hat sich daraufhin telefonisch mit dem Projektleiter in Verbindung
+gesetzt und durchwegs positives Feedback zur Umsetzung abgegeben (\textbf{9.4}).
+Auch hier wünscht der Kunde nur noch kleinere Anpassungen der Texte (\textbf{9.5}).
+Da die Änderungen keine zusätzlichen Arbeitspakete benötigen, muss die Offerte
+nicht angepasst werden. Nun folgen noch die letzten Todos um den Wettbewerb live 
+zu schalten. Danach kann das Projekt abgeschlossen werden (\textbf{11.1}).
+Der Projektleiter überprüft noch ein letztes mal den Projektreport, bevor er
+das Projekt abschliesst und im allink.planer archiviert. Die Abbildung \ref{pic:allink_planer_report_ende}
+zeigt den Report des Projektes kurz vor der Archivierung.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.87\textwidth,angle=0]{./bilder/proof_of_concept/allink_planer_report_ende.png}
+\caption[Report des Projektes kurz vor der Archivierung]{Report des Projektes 
+    kurz vor der Archivierung\footnotemark}
+\label{pic:allink_planer_report_ende}
+\end{center}
+\end{figure}
+\footnotetext{Screenshot aus allink.planer}
+
+Wie man der Grafik entnehmen kann, war das Projekt sehr effizient. Es wurden knapp
+über 55\% des geplanten Budgets aufgebraucht. Dabei muss jedoch beachtet werden,
+dass das ganze Facebookwettbewerb Konzept bereits in zwei voran gegangenen Projekten
+umgesetzt wurde und somit viel weniger Aufwand nötig war. Im ersten Projekt
+wurde weit mehr als 100\% des damaligen Budgets aufgebraucht. Dank diesem
+Projekt und hoffentlich noch weiteren Umsetzungen dieses Facebookwettbewerbs,
+kann der damalige Aufwand quersubventioniert werden.
+
+In der kurz gehaltenen Reflektionssitzung bei einem Kaffee wurden von den Mitarbeitern
+und dem Projektleiter keine Probleme angesprochen. Das Projekt verlief für 
+alle Beteiligten nahezu optimal.
+
+\section{Anforderungsabdeckung}
+Der Lösungsansatz scheint im ``Proof of Concept'' gut funktioniert zu haben.
+Zum Abschluss wird noch überprüft ob auch im ``Proof of Concept'' alle 
+Anforderungen abgedeckt werden konnten.
+
+Dazu werden die im Kapitel \ref{chap:akzeptanzkriterien} definierten 
+Akzeptanzkriterien erneut durchlaufen und geprüft. Dies ist in der nachfolgenden Tabelle 
+\ref{tab:akzeptanzkriterien_test_poc} ersichtlich. Zur besseren Lesbarkeit wurde zur 
+Akzeptanzkriteriumsnummer das Kriterium ein weiteres mal aufgelistet. Dazu wird 
+der Status der Erfüllung gezeigt und in kurzen Worten beschrieben, wodurch das
+Kriterium erfüllt wird.
+
+\begin{longtable}{lp{6cm}p{5cm}l}
+    \toprule \textbf{Nr.} & \textbf{Kriterium} & \textbf{Beschreibung} & \textbf{Status} \\
+    \midrule AK1 &
+        Wurde für das Projekt ein Hauptverantwortlicher Projektleiter definiert? &
+        Ja, dies war Silvan Spross &
+        erfüllt \\
+    \midrule AK2 &
+        Wurde für das Projekt ein Hauptverantwortlicher Partner definiert? &
+        Ja, dies war ebenfalls Silvan Spross &
+        erfüllt \\
+    \midrule AK3 &
+        Existiert für das Projekt ein Projektbrief? &
+        Ja, wurde definiert. Vgl. Tabelle \ref{tab:projektbrief_poc} &
+        erfüllt \\
+    \midrule AK4 &
+        Können für das Projekt Meilensteine und Arbeitspakete definiert werden? &
+        Ja, wurden in Basecamp erfasst. Vlg. Abbildung \ref{pic:todos_poc} &
+        erfüllt \\
+    \midrule AK5 &
+        Können die Mitarbeiter auf das Projekt Stunden rapportieren? &
+        Ja, mit dem allink.timer. Vlg. Abbildung \ref{pic:allink_timer} &
+        erfüllt \\
+    \midrule AK6 &
+        Sind die definierten Projektkennzahlen in einem System ersichtlich? &
+        Ja, im allink.planer. Vlg. Abbildung \ref{pic:allink_planer_report}
+        und \ref{pic:allink_planer_report_ende} &
+        erfüllt \\
+    \midrule AK7 &
+        Sind die definierten Liquiditäts-Kennzahlen in einem System ersichtlich? &
+        Ja, im allink.palner. Vgl. Abbildung \ref{pic:allink_planer_liq} &
+        erfüllt \\
+    \midrule AK8 &
+        Existiert eine klare Struktur zur Ablage der Projektdaten? &
+        Ja, auf dem allink Server. Vgl. Abbildung \ref{pic:ablagestruktur_poc} &
+        erfüllt \\
+    \midrule AK9 &
+        Wurde für das Projekt ein Hauptverantwortlicher für die Qualitätssicherung definiert? &
+        Ja, dies war Silvan Spross. &
+        erfüllt \\
+    \bottomrule
+    \caption[Überprüfung der Akzeptanzkriterien im ``Proof of Concept'']{Überprüfung 
+        der Akzeptanzkriterien im ``Proof of Concept''\footnotemark}
+    \label{tab:akzeptanzkriterien_test_poc}
+\end{longtable}
+\footnotetext{Eigene Darstellung}
+
+Im ``Proof of Concept'' wurden ebenfalls alle Akzeptanzkriterien erfüllt
+und somit alle definierten Anforderungen abgedeckt. Das bestätigt, dass der
+Lösungsansatz funktioniert und so definitiv umgesetzt werden kann.
